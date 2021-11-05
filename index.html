@@ -5,16 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
+    <header>
+      <div class="contentWrapper">
+        <h1>Look! It's a calculator!</h1>
+      </div>
+    </header>
+    <!-- ./Header -->
+
+    <main>
+      <div class="contentWrapper">
+        <section class="logoAndToggle">
+          <p>calc</p>
+
+          <div class="themeToggle">
+            <label for="firstRadioBtn" class="customRadioBtn">
+              <input
+                type="radio"
+                id="firstRadioBtn"
+                name="toggleState"
+                checked
+              />
+              <span class="checkmark"></span>
+            </label>
+
+            <label for="secondRadioBtn" class="customRadioBtn">
+              <input type="radio" id="secondRadioBtn" name="toggleState" />
+              <span class="checkmark"></span>
+            </label>
+
+            <label for="thirdRadioBtn" class="customRadioBtn">
+              <input type="radio" id="thirdRadioBtn" name="toggleState" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </section>
+        <!-- ./logoAndToggle -->
+
+        <section class="calculator">
+          <div class="calcGrid">
+            <div class="output">
+              <div class="previousOperand"></div>
+              <div class="currentOperand"></div>
+            </div>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>Del</button>
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>+</button>
+
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>-</button>
+
+            <button>.</button>
+            <button>0</button>
+            <button>/</button>
+            <button>x</button>
+
+            <button class="spanTwo reset">Reset</button>
+            <button class="spanTwo equals"></button>
+          </div>
+        </section>
+        <!-- ./calculator -->
+      </div>
+    </main>
+    <!-- ./Main -->
+
     <footer>
-      <p>
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
+      <div class="contentWrapper">
+        <p>
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Maxim Belomestnov</a>.
+        </p>
+      </div>
     </footer>
+    <!-- ./Footer -->
   </body>
 </html>

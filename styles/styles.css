@@ -6,6 +6,7 @@ html {
 
 body {
   margin: 0;
+  font-size: 125%;
 }
 
 article,
@@ -260,4 +261,28 @@ template {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.contentWrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+body {
+  background: #3a4764;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
 }
