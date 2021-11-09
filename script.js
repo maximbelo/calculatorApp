@@ -1,7 +1,7 @@
 "use strict";
 
 // ===========================================
-// Our Variables
+// Variables
 // ===========================================
 const displayOneEl = document.querySelector(".displayOne");
 const displayTwoEl = document.querySelector(".displayTwo");
@@ -111,3 +111,48 @@ deleteEl.addEventListener("click", (e) => {
   displayTwoEl.innerText = "";
   displayTwo = "";
 });
+
+// Adding keyboard functionality
+window.addEventListener("keydown", (e) => {
+  if (
+    e.key === "0" ||
+    e.key === "1" ||
+    e.key === "2" ||
+    e.key === "3" ||
+    e.key === "4" ||
+    e.key === "5" ||
+    e.key === "6" ||
+    e.key === "7" ||
+    e.key === "8" ||
+    e.key === "9" ||
+    e.key === "."
+  ) {
+    clickButtonEl(e.key);
+  } else if (e.key === "-" || e.key === "+") {
+    clickOperationEl(e.key);
+  } else if (e.key === "*") {
+    clickOperationEl("x");
+  } else if (e.key === "=" || e.key === "Enter") {
+    clickEqualsEl(e.key);
+  }
+});
+
+const clickButtonEl = (key) => {
+  numbersEl.forEach((numberBtn) => {
+    if (numberBtn.innerText === key) {
+      numberBtn.click();
+    }
+  });
+};
+
+const clickOperationEl = (key) => {
+  operationEl.forEach((operationBtn) => {
+    if (operationBtn.innerText === key) {
+      operationBtn.click();
+    }
+  });
+};
+
+const clickEqualsEl = () => {
+  equalsEl.click();
+};
