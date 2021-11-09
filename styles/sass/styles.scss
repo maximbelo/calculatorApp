@@ -40,6 +40,13 @@
 .output {
   background: $screenBackground;
   width: 24rem;
-  height: 100px;
+  height: 120px;
   margin: 0 auto;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+
+  .tempResults {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
 }
