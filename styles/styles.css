@@ -277,6 +277,8 @@ body {
 body {
   background: #3a4764;
   color: white;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
@@ -285,4 +287,53 @@ h1 {
 
 footer {
   text-align: center;
+}
+
+.calcGrid {
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(5, 100px);
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 0;
+}
+
+.reset {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.equals {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.logoAndToggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.themeToggle {
+  margin-left: 16rem;
+}
+
+.output {
+  background: #182034;
+  width: 24rem;
+  height: 100px;
+  margin: 0 auto;
 }
