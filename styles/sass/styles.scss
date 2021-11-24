@@ -1,4 +1,5 @@
 @import "setup";
+@import "mixins";
 @import "vars";
 @import "typography";
 @import "general";
@@ -9,12 +10,16 @@
 
 .calcGrid {
   display: grid;
+  background: $toggleAndKeypad;
   justify-content: center;
   align-items: center;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: repeat(5, 100px);
   column-gap: 10px;
   row-gap: 0;
+  margin: 1.5rem auto;
+  width: 500px;
+  border-radius: 5px;
 }
 
 .reset {
@@ -39,14 +44,30 @@
 
 .output {
   background: $screenBackground;
-  width: 24rem;
+  width: 500px;
   height: 120px;
   margin: 0 auto;
   padding: 0.5rem 0.5rem 0 0.5rem;
+  border-radius: 5px;
 
   .tempResults {
     display: flex;
     justify-content: end;
     align-items: center;
   }
+}
+
+// Keys
+.number,
+.operation {
+  @include calcBtnColors($mainKeysOne, $mainKeysShadowOne, $greyishBlue);
+}
+
+.delete,
+.reset {
+  @include calcBtnColors($delAndResetOne, $delAndResetShadowOne, $white);
+}
+
+.equals {
+  @include calcBtnColors($equalAndToggleOne, $equalAndToggleShadowOne, $white);
 }

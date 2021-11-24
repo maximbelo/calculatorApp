@@ -269,6 +269,14 @@ body {
   font-size: 32px;
 }
 
+footer p {
+  font-size: 18px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
 .contentWrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -291,6 +299,7 @@ footer {
 
 .calcGrid {
   display: grid;
+  background: #232c43;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -303,6 +312,9 @@ footer {
      -moz-column-gap: 10px;
           column-gap: 10px;
   row-gap: 0;
+  margin: 1.5rem auto;
+  width: 500px;
+  border-radius: 5px;
 }
 
 .reset {
@@ -333,10 +345,11 @@ footer {
 
 .output {
   background: #182034;
-  width: 24rem;
+  width: 500px;
   height: 120px;
   margin: 0 auto;
   padding: 0.5rem 0.5rem 0 0.5rem;
+  border-radius: 5px;
 }
 .output .tempResults {
   display: -webkit-box;
@@ -348,4 +361,39 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.number,
+.operation {
+  background: #eae3dc;
+  color: #444b5a;
+  -webkit-box-shadow: 0px 4px #b4a597;
+          box-shadow: 0px 4px #b4a597;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.delete,
+.reset {
+  background: #637097;
+  color: white;
+  -webkit-box-shadow: 0px 4px #404e72;
+          box-shadow: 0px 4px #404e72;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.equals {
+  background: #d03f2f;
+  color: white;
+  -webkit-box-shadow: 0px 4px #93261a;
+          box-shadow: 0px 4px #93261a;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
 }
