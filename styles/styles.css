@@ -272,10 +272,6 @@ body {
 footer p {
   font-size: 18px;
 }
-footer a {
-  color: white;
-  text-decoration: none;
-}
 
 .contentWrapper {
   max-width: 1440px;
@@ -294,7 +290,16 @@ h1 {
 }
 
 footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
   text-align: center;
+}
+footer a {
+  color: white;
+  text-decoration: none;
 }
 
 .calcGrid {
@@ -328,9 +333,7 @@ footer {
 }
 
 .logoAndToggle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
