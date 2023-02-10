@@ -279,8 +279,8 @@ footer p {
 }
 
 body {
-  background: #3a4764;
-  color: white;
+  background: hsl(222deg, 26%, 31%);
+  color: hsl(0deg, 0%, 100%);
   padding: 0;
   margin: 0;
 }
@@ -290,21 +290,17 @@ h1 {
 }
 
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
   color: white;
   text-align: center;
 }
 footer a {
-  color: white;
+  color: hsl(0deg, 0%, 100%);
   text-decoration: none;
 }
 
 .calcGrid {
   display: grid;
-  background: #232c43;
+  background: hsl(223deg, 31%, 20%);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -347,7 +343,7 @@ footer a {
 }
 
 .output {
-  background: #182034;
+  background: hsl(224deg, 36%, 15%);
   width: 500px;
   height: 120px;
   margin: 0 auto;
@@ -368,10 +364,10 @@ footer a {
 
 .number,
 .operation {
-  background: #eae3dc;
-  color: #444b5a;
-  -webkit-box-shadow: 0px 4px #b4a597;
-          box-shadow: 0px 4px #b4a597;
+  background: hsl(30deg, 25%, 89%);
+  color: hsl(221deg, 14%, 31%);
+  -webkit-box-shadow: 0px 4px hsl(28deg, 16%, 65%);
+          box-shadow: 0px 4px hsl(28deg, 16%, 65%);
   border: none;
   border-radius: 5px;
   padding: 0.5rem;
@@ -380,10 +376,10 @@ footer a {
 
 .delete,
 .reset {
-  background: #637097;
-  color: white;
-  -webkit-box-shadow: 0px 4px #404e72;
-          box-shadow: 0px 4px #404e72;
+  background: hsl(225deg, 21%, 49%);
+  color: hsl(0deg, 0%, 100%);
+  -webkit-box-shadow: 0px 4px hsl(224deg, 28%, 35%);
+          box-shadow: 0px 4px hsl(224deg, 28%, 35%);
   border: none;
   border-radius: 5px;
   padding: 0.5rem;
@@ -391,10 +387,10 @@ footer a {
 }
 
 .equals {
-  background: #d03f2f;
-  color: white;
-  -webkit-box-shadow: 0px 4px #93261a;
-          box-shadow: 0px 4px #93261a;
+  background: hsl(6deg, 63%, 50%);
+  color: hsl(0deg, 0%, 100%);
+  -webkit-box-shadow: 0px 4px hsl(6deg, 70%, 34%);
+          box-shadow: 0px 4px hsl(6deg, 70%, 34%);
   border: none;
   border-radius: 5px;
   padding: 0.5rem;
